@@ -17,9 +17,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && yarn move-build-to-docs",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+
+    "move-build-to-docs": "mv -v build/* docs/"
   },
   "eslintConfig": {
     "extends": "react-app"
