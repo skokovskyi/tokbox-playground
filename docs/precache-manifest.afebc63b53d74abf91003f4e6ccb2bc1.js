@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e9bf3721840c2d4f8dc844a2b84af0d",
+    "revision": "dff47b10877738b2639e71502d9f5563",
     "url": "/tokbox-playground/index.html"
   },
   {
