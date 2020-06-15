@@ -2,6 +2,7 @@
   "name": "tokbox-playground",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://skokovskyi.github.io/tokbox-playground/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -17,11 +18,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && yarn move-build-to-docs",
+    "build": "react-scripts build && yarn post-build",
+    "post-build": "yarn clear-docs-folder && yarn move-build-to-docs && yarn rm-build-folder",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
 
-    "move-build-to-docs": "mv -v build/* docs/"
+
+    "clear-docs-folder": "rm -rf docs/*",
+    "move-build-to-docs": "mv -v build/* docs/",
+    "rm-build-folder": "rm -rf build/"
   },
   "eslintConfig": {
     "extends": "react-app"
