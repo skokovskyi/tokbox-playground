@@ -2210,6 +2210,13 @@ aws4@^1.8.0:
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.9.1.tgz#7e33d8f7d449b3f673cd72deb9abdc552dbe528e"
   integrity sha512-wMHVg2EOHaMRxbzgFJ9gtjOOCrI80OHLG14rxi28XwOW8ux6IiEbRCGGGqCtdAIg4FQCbW20k9RsT4y3gJlFug==
 
+axios@^0.19.0:
+  version "0.19.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
+  integrity sha512-fjgm5MvRHLhx+osE2xoekY70AhARk3a6hkN+3Io1jc00jtquGvxYlKlsFUhmUET0V5te6CcZI7lcv2Ym61mjHA==
+  dependencies:
+    follow-redirects "1.5.10"
+
 axobject-query@^2.0.2:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/axobject-query/-/axobject-query-2.1.2.tgz#2bdffc0371e643e5f03ba99065d5179b9ca79799"
@@ -2869,6 +2876,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
+
 clean-css@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.3.tgz#507b5de7d97b48ee53d84adb0160ff6216380f78"
@@ -3521,6 +3533,13 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   integrity sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==
+  dependencies:
+    ms "2.0.0"
+
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  integrity sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==
   dependencies:
     ms "2.0.0"
 
@@ -4578,6 +4597,13 @@ flush-write-stream@^1.0.0:
   dependencies:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
+
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  integrity sha512-0V5l4Cizzvqt5D44aTXbFZz+FtyXV1vrDN6qrelxtfYQKW0KO0W2T/hkE8xvGa/540LkZlkaUjO4ailYTFtHVQ==
+  dependencies:
+    debug "=3.1.0"
 
 follow-redirects@^1.0.0:
   version "1.10.0"
@@ -6125,6 +6151,11 @@ jest@24.9.0:
     import-local "^2.0.0"
     jest-cli "^24.9.0"
 
+jquery@^3.1.0:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
+  integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -6343,6 +6374,11 @@ kleur@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
+
+kuende-livestamp@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/kuende-livestamp/-/kuende-livestamp-1.1.2.tgz#27392dd8ce018898d6965f10dfbf003eacbc8335"
+  integrity sha1-Jzkt2M4BiJjWll8Q378APqy8gzU=
 
 last-call-webpack-plugin@^3.0.0:
   version "3.0.0"
@@ -6833,6 +6869,11 @@ mkdirp@^0.5.1, mkdirp@^0.5.3, mkdirp@~0.5.1:
   dependencies:
     minimist "^1.2.5"
 
+moment@^2.14.1:
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
+  integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -7210,6 +7251,61 @@ open@^7.0.2:
   dependencies:
     is-docker "^2.0.0"
     is-wsl "^2.1.1"
+
+opentok-accelerator-core@^2.0.15:
+  version "2.0.15"
+  resolved "https://registry.yarnpkg.com/opentok-accelerator-core/-/opentok-accelerator-core-2.0.15.tgz#d8e8353da0e8647942240c871bc0b4fa7a5018bb"
+  integrity sha512-YbcJCVr6y1mhWi/lW32tTP1MDquyGeMZJA6aQDXjD/fGNBBR1mOnF/wc3QZmPp9ghEEhyHK6HBTSIC7joD+BRQ==
+  dependencies:
+    opentok-solutions-logging "^1.0.7"
+
+opentok-annotation@^2.0.59:
+  version "2.0.59"
+  resolved "https://registry.yarnpkg.com/opentok-annotation/-/opentok-annotation-2.0.59.tgz#7b79a11b0cc50241bbad3cc1f274293ba9bea8e6"
+  integrity sha1-e3mhGwzFAkG7rTzB8nQpO6m+qOY=
+  dependencies:
+    jquery "^3.1.0"
+    opentok-solutions-logging "^1.0.6"
+    underscore "^1.8.3"
+
+opentok-archiving@^1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/opentok-archiving/-/opentok-archiving-1.0.19.tgz#1b2f43aedc006ccf76158edbc6dd159e507ae1e2"
+  integrity sha1-Gy9DrtwAbM92FY7bxt0VnlB64eI=
+  dependencies:
+    jquery "^3.1.0"
+
+opentok-screen-sharing@^1.0.33:
+  version "1.0.33"
+  resolved "https://registry.yarnpkg.com/opentok-screen-sharing/-/opentok-screen-sharing-1.0.33.tgz#8d286b9aa5995b1a74ebda39441bf3deb7dd0a48"
+  integrity sha512-KMQ/cfIJGtehV3GhIO8nIEKHjKAtS1+njQN1Giy9wwSWZoYMr4rljQ+kD2oN5Moc3Bho+ctpjb4rM5pE2vQOtQ==
+  dependencies:
+    jquery "^3.1.0"
+    opentok-solutions-logging "^1.0.6"
+    underscore "^1.8.3"
+
+opentok-solutions-css@^0.0.43:
+  version "0.0.43"
+  resolved "https://registry.yarnpkg.com/opentok-solutions-css/-/opentok-solutions-css-0.0.43.tgz#1b71e69c6787241d6ca048035556a874e9f045d0"
+  integrity sha1-G3HmnGeHJB1soEgDVVaodOnwRdA=
+
+opentok-solutions-logging@^1.0.6, opentok-solutions-logging@^1.0.7:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/opentok-solutions-logging/-/opentok-solutions-logging-1.0.15.tgz#47e6463eaae03ce302c585587b95dfbc8c185cad"
+  integrity sha512-o8alNMf+A1Vd4oLFTP26F87qLm9xYokEi97QKR+n7+ZZfa/IlwrWM54msA65yyB+0YLbk7qHxNFfJ2ezGb+xOg==
+  dependencies:
+    axios "^0.19.0"
+
+opentok-text-chat@^1.0.30:
+  version "1.0.30"
+  resolved "https://registry.yarnpkg.com/opentok-text-chat/-/opentok-text-chat-1.0.30.tgz#59f20a8f7320518e12366f9f38cdd80e7719451c"
+  integrity sha1-WfIKj3MgUY4SNm+fOM3YDncZRRw=
+  dependencies:
+    jquery "^3.1.0"
+    kuende-livestamp "^1.1.2"
+    moment "^2.14.1"
+    opentok-solutions-logging "^1.0.6"
+    underscore "^1.8.3"
 
 opn@^5.5.0:
   version "5.5.0"
@@ -8660,6 +8756,11 @@ react-scripts@3.4.1:
     workbox-webpack-plugin "4.3.1"
   optionalDependencies:
     fsevents "2.1.2"
+
+react-spinner@^0.2.7:
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/react-spinner/-/react-spinner-0.2.7.tgz#ea3ca3375dd7a54edbb5cc01d17496a2e2fc14db"
+  integrity sha1-6jyjN13XpU7btcwB0XSWouL8FNs=
 
 react@^16.13.1:
   version "16.13.1"
@@ -10130,6 +10231,11 @@ typescript@~3.7.2:
   version "3.7.5"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.5.tgz#0692e21f65fd4108b9330238aac11dd2e177a1ae"
   integrity sha512-/P5lkRXkWHNAbcJIiHPfRoKqyd7bsyCma1hZNUGfn20qm64T6ZBlrzprymeu918H+mB/0rIg2gGK/BXkhhYgBw==
+
+underscore@^1.8.3:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.10.2.tgz#73d6aa3668f3188e4adb0f1943bd12cfd7efaaaf"
+  integrity sha512-N4P+Q/BuyuEKFJ43B9gYuOj4TQUHXX+j2FqguVOpjkssLUUrnJofCcBccJSCoeturDoZU6GorDTHSvUDlSQbTg==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

@@ -11,9 +11,17 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "classnames": "^2.2.6",
+    "opentok-accelerator-core": "^2.0.15",
+    "opentok-annotation": "^2.0.59",
+    "opentok-archiving": "^1.0.19",
+    "opentok-screen-sharing": "^1.0.33",
+    "opentok-solutions-css": "^0.0.43",
+    "opentok-text-chat": "^1.0.30",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-spinner": "^0.2.7",
     "typescript": "~3.7.2"
   },
   "scripts": {
@@ -22,8 +30,6 @@
     "post-build": "yarn clear-docs-folder && yarn move-build-to-docs && yarn rm-build-folder",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-
-
     "clear-docs-folder": "rm -rf docs/*",
     "move-build-to-docs": "mv -v build/* docs/",
     "rm-build-folder": "rm -rf build/"
