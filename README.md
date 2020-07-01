@@ -11,4 +11,4 @@ sessionId=YOUR_SESSION_ID
 token=YOUR_TOKEN
 ```
 
-[DEMO link](https://skokovskyi.github.io/tokbox-playground)
+[DEMO link](https://skokovskyi.github.io/tokbox-playground?apiKey=YOUR_API_KEY&sessionId=YOUR_SESSION_ID&token=YOUR_TOKEN)
