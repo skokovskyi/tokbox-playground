@@ -6,73 +6,12 @@ import classNames from 'classnames';
 
 
 import logo from './logo.svg';
-import config from './config.json';
 import './App.css';
 
 const AccCore = require('opentok-accelerator-core/dist/core');
 
-//  @ts-ignore
 let otCore;
-const otCoreOptions = {
-    credentials: {
-        apiKey: config.apiKey,
-        sessionId: config.sessionId,
-        token: config.token,
-    },
-    // A container can either be a query selector or an HTML Element
-    streamContainers(pubSub, type, data, stream) {
-        return {
-            publisher: {
-                camera: '#cameraPublisherContainer',
-                screen: '#screenPublisherContainer',
-            },
-            subscriber: {
-                camera: '#cameraSubscriberContainer',
-                screen: '#screenSubscriberContainer',
-            },
-        }[pubSub][type];
-    },
-    controlsContainer: '#controls',
-    packages: ['textChat', 'screenSharing', 'annotation'],
-    //packages: [],
-    communication: {
-        callProperties: null, // Using default
-    },
-    textChat: {
-        name: ['David', 'Paul', 'Emma', 'George', 'Amanda'][Math.random() * 5 | 0], // eslint-disable-line no-bitwise
-        waitingMessage: 'Messages will be delivered when other users arrive',
-        container: '#chat',
-    },
-    screenSharing: {
-        extensionID: 'plocfffmbcclpdifaikiikgplfnepkpo',
-        annotation: true,
-        externalWindow: false,
-        dev: true,
-        screenProperties: {
-            insertMode: 'append',
-            width: '100%',
-            height: '100%',
-            showControls: false,
-            style: {
-                buttonDisplayMode: 'off',
-            },
-            videoSource: 'window',
-            fitMode: 'contain' // Using default
-        },
-    },
-    annotation: {
-        absoluteParent: {
-            publisher: '.App-video-container',
-            subscriber: '.App-video-container'
-        }
-    },
-};
 
-/**
- * Build classes for container elements based on state
- * @param {Object} state
- */
-//  @ts-ignore
 const containerClasses = (state) => {
     const { active, meta, localAudioEnabled, localVideoEnabled } = state;
     const sharingScreen = meta ? !!meta.publisher.screen : false;
@@ -103,14 +42,12 @@ const connectingMask = () =>
         <div className="message with-spinner">Connecting</div>
     </div>;
 
-//  @ts-ignore
 const startCallMask = start =>
     <div className="App-mask">
         <button className="message button clickable" onClick={start}>Click to Start Call </button>
     </div>;
 
 class App extends Component {
-    //  @ts-ignore
     constructor(props) {
         super(props);
         this.state = {
@@ -129,8 +66,32 @@ class App extends Component {
     }
 
     componentDidMount() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const apiKey = urlParams.get('apiKey');
+        const sessionId = urlParams.get('sessionId');
+        const token = urlParams.get('token');
+
+        const otCoreOptions = {
+            credentials: { apiKey, sessionId, token },
+            streamContainers(pubSub, type, data, stream) {
+                return {
+                    publisher: {
+                        camera: '#cameraPublisherContainer',
+                        screen: '#screenPublisherContainer',
+                    },
+                    subscriber: {
+                        camera: '#cameraSubscriberContainer',
+                        screen: '#screenSubscriberContainer',
+                    },
+                }[pubSub][type];
+            },
+            controlsContainer: '#controls',
+        };
+
         otCore = new AccCore(otCoreOptions);
+
         otCore.connect().then(() => this.setState({ connected: true }));
+
         const events = [
             'subscribeToCamera',
             'unsubscribeFromCamera',
@@ -195,12 +156,13 @@ class App extends Component {
                         <div id="cameraSubscriberContainer" className={cameraSubscriberClass} />
                         <div id="screenSubscriberContainer" className={screenSubscriberClass} />
                     </div>
-                    <div id="controls" className={controlClass}>
-                        <div className={localAudioClass} onClick={this.toggleLocalAudio} />
-                        <div className={localVideoClass} onClick={this.toggleLocalVideo} />
-                        <div className={localCallClass} onClick={this.endCall} />
+                    <div style={{ position: 'absolute', bottom: 0, width: '100%' }}>
+                        <div id="controls" className={controlClass}>
+                            <div className={localAudioClass} onClick={this.toggleLocalAudio} />
+                            <div className={localVideoClass} onClick={this.toggleLocalVideo} />
+                            <div className={localCallClass} onClick={this.endCall} />
+                        </div>
                     </div>
-                    <div id="chat" className="App-chat-container" />
                 </div>
             </div>
         );

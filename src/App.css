@@ -187,3 +187,8 @@ body {
 .App-video-container .video-container.active-gt2.active-odd .OT_subscriber:first-child {
   flex-basis: 100%;
 }
+
+
+.App-video-container #cameraPublisherContainer .OT_video-poster {
+  display: none !important;
+}
