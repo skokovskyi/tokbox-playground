@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/tokbox-playground/precache-manifest.4adec3cabf5015ed146afed33b80485c.js"
+  "/tokbox-playground/precache-manifest.609e0dceb4b76a83c56a204b8ddc0e25.js"
 );
 
 self.addEventListener('message', (event) => {

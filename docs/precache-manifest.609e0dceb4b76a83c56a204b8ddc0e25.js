@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39edbb909739747234c9e820fffac403",
+    "revision": "550106b111b351fcb5bde931254e7f88",
     "url": "/tokbox-playground/index.html"
   },
   {
-    "revision": "f7f833bb1edb5c382641",
-    "url": "/tokbox-playground/static/css/main.50f8a205.chunk.css"
+    "revision": "4ec1aeba0ce04576c667",
+    "url": "/tokbox-playground/static/css/main.a3916aa8.chunk.css"
   },
   {
-    "revision": "e8a615aecfcca779eebd",
-    "url": "/tokbox-playground/static/js/2.64609cda.chunk.js"
+    "revision": "379acd6662554a8bfd74",
+    "url": "/tokbox-playground/static/js/2.21c9f021.chunk.js"
   },
   {
     "revision": "2ec0ea090482afb07b6db7496ef5de1f",
-    "url": "/tokbox-playground/static/js/2.64609cda.chunk.js.LICENSE.txt"
+    "url": "/tokbox-playground/static/js/2.21c9f021.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f7f833bb1edb5c382641",
-    "url": "/tokbox-playground/static/js/main.390e30f4.chunk.js"
+    "revision": "4ec1aeba0ce04576c667",
+    "url": "/tokbox-playground/static/js/main.84812868.chunk.js"
   },
   {
     "revision": "9c3183b9c84f37758d09",
